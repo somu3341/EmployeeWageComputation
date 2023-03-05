@@ -17,11 +17,23 @@ namespace EmployeeWageComputation
             int empHrs = 0;
             Random random = new Random();
             int check = random.Next(0, 3);
-            if (check == FULL_TIME)               
+            switch(check)
+            {
+                case FULL_TIME:
+                    empHrs = FULL_DAY_HR;
+                    break;
+                case PART_TIME:
+                    empHrs = PART_TM_HR;
+                    break;
+                default:
+                    empHrs = 0; 
+                    break;
+            }
+            if (check == FULL_TIME)
                 empHrs = FULL_DAY_HR;
-            if (check == PART_TIME)               
-                empHrs = PART_TM_HR;
-            else              
+            if (check == PART_TIME)
+                empHrs = PART_TM_HR;           
+            else
                 empHrs = 0;
             int wage = WAGE_PER_HR * empHrs;
             Console.WriteLine(wage);
