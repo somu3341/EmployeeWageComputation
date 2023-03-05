@@ -9,7 +9,7 @@ namespace EmployeeWageComputation
             EmployeeWage employeeWage = new EmployeeWage();
             employeeWage.Attendance();
             EmployeeWage employee = new EmployeeWage();
-            employee.DailyEmWages();
+            employee.DailyEmWages();         
         }
     }
 }
