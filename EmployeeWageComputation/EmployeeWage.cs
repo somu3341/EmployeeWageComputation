@@ -25,13 +25,12 @@ namespace EmployeeWageComputation
                 {
                 case FULL_TIME:
                     empHrs += FULL_DAY_HR;
-                        empHrs = empHrs + FULL_DAY_HR;
                     break;
                 case PART_TIME:
                     empHrs += PART_TM_HR;                       
                     break;
                     default:
-                    empHrs = 0;
+                    empHrs += 0;
                     break;
                 }
             }            
