@@ -33,7 +33,7 @@ namespace EmployeeWageComputation
                     empHrs += 0;
                     break;
                 }
-            }            
+            }  
             int wage = WAGE_PER_HR * empHrs;
             Console.WriteLine(wage);
         }       
