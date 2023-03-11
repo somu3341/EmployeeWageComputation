@@ -29,12 +29,6 @@ namespace EmployeeWageComputation
                     empHrs = 0; 
                     break;
             }
-            if (check == FULL_TIME)
-                empHrs = FULL_DAY_HR;
-            if (check == PART_TIME)
-                empHrs = PART_TM_HR;           
-            else
-                empHrs = 0;
             int wage = WAGE_PER_HR * empHrs;
             Console.WriteLine(wage);
         }       
